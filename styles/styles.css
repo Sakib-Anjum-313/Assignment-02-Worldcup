@@ -45,7 +45,7 @@ main {
   left: 10%;
   width: 531px;
   height: 424px;
-  border: 2px solid brown;
+  /* border: 2px solid brown; */
 }
 .top-banner-title h1 {
   margin: 0;
@@ -69,7 +69,7 @@ main {
 .top-banner-title button{
     font-family:"Poppins";
     background-color: red;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #ffffff;
     padding: 2% 4%;
     font-weight: 500;
@@ -87,22 +87,105 @@ main {
 
 
 /* -------------
-grid section 
+2nd part grid section
 -------------------*/
 
+ /* Match side button  */
 
-.match-banner{
-    border: 2px solid purple;
+.match-banner-container{
+    /* border: 2px solid purple; */
     width: 1300px;
-    height: 646px;
+    height: 660px;
     margin: 5%;
+    display: flex;
 }   
 
- .side-btn {
-    border: 2px solid black;
-
+ .match-button-container {
+    background-color: #161616;
+    border-radius: 10px;
     width: 212px;
     height: 212px;
- 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.match-button-container button{
+  font-family:"Poppins";
+  width: 152px;
+  height: 44px;
+  font-weight: 700;
+  background-color:aliceblue;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+
+/* Match Grid View */
+.match-grid-view{
+  /* border: 2px solid red; */
+  width: 1088px;
+  padding-left: 20px;
+}
+
+.matches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  padding-left: 5px;
+  gap: 10px;
+}
+
+
+
+.single-match{
+  background-color:rgb(246, 242, 236);
+  border-radius: 10px;
+  /* border: 2px solid green; */
+  width: 320px;
+
+}
+ .single-match img{
+  width: 320px;
+  height: 175px;
+}
+ .transfer-btn {
+   padding-left: 10px;
+
+ }
+.match-info h3{
+  padding-left: 10px;
+  margin: 0;
+
+}
+
+.match-schedule-container {
+  display: flex;
+  justify-content: space-around;
+  
+  
+  
+}
+
+
+
+ .clock, .comments{
+  display: flex;
+  padding-right: 90px;
+  align-items: center;
+}
+
+.fa-clock, .fa-message{
+  padding-right: 5px;
+  align-items: center;
+}
+
+.match-rating-info{
+  display: flex;
+  justify-content:space-between
 
 }
