@@ -1,0 +1,108 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Common Styles */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.top-banner-container{
+    width: 1300px;
+  height: 646px;
+  border: 2px solid red;
+  
+  margin: 10px;
+}
+
+/* Top-Banner Style  */
+
+.top-banner {
+  width: 1300px;
+  height: 646px;
+  background-color: #161616;
+  border-radius: 20px;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding-left: 100px; */
+}
+
+.top-banner-title {
+  position: relative;
+  left: 10%;
+  width: 531px;
+  height: 424px;
+  border: 2px solid brown;
+}
+.top-banner-title h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 58px;
+  color: #ffffff;
+}
+
+.top-banner .top-banner-title p {
+    
+  font-family: "Poppins";
+  font-style:normal
+  
+  font-weight: 400;
+  font-size: 90%;
+  width: 506px;
+  height: 78px;
+  color: #ffffff;
+}
+
+.top-banner-title button{
+    font-family:"Poppins";
+    background-color: red;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 2% 4%;
+    font-weight: 500;
+    font-size:medium;
+}
+
+.top-banner-img img {
+  margin: 0%;
+  position: relative;
+  left: 25%;
+  top: 18px;
+  width: 581px;
+  height: 613px;
+}
+
+
+/* -------------
+grid section 
+-------------------*/
+
+
+.match-banner{
+    border: 2px solid purple;
+    width: 1300px;
+    height: 646px;
+    margin: 5%;
+}   
+
+ .side-btn {
+    border: 2px solid black;
+
+    width: 212px;
+    height: 212px;
+ 
+
+}
