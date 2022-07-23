@@ -29,7 +29,7 @@ main {
 /* Top-Banner Style  */
 
 .top-banner {
-  border: 5px solid greenyellow;
+  /* border: 5px solid greenyellow; */
   width: 1300px;
   height: 646px;
   background-color: #161616;
@@ -67,7 +67,7 @@ main {
   color: #ffffff;
 }
 
-.top-banner-title button{
+.top-banner-btn{
     font-family:"Poppins";
     background-color: red;
     border-color: red;
@@ -303,7 +303,10 @@ footer{
         Media Queries
         ................ */
 
- /* Mobile Device */
+
+        /* ----------
+        Mobile Device 
+        ---------------*/
 
  @media only screen and (max-width:688px) {
 
@@ -351,7 +354,7 @@ footer{
   }
 
 
-  /* 2nd part */
+  /* 2nd part start*/
 
   .blog-banner-container{
     border: 6px solid purple;
@@ -392,9 +395,97 @@ footer{
 
 /* 2nd part end */
 
+   
+ }
+/* ------------
+Tablet View
+-------------  */
 
-blog-button-container
+ @media only screen and (max-width:992px) {
+  .main, .top-banner-container, .top-banner, .top-banner-title-container{
+    width: 100%;
+  }
+  .top-banner{
+    border: 6px solid red;
+  }
+
+  .top-banner-title {
+    width: 100%;
+    font-size: 40px;
+  }
+
+  .top-banner-paragraph{
+    width: 100%;
+    font-size: 12px;
+    
+  }
+
+.top-banner-img, .player-img {
+  position: relative;
+  left: -150px;
+  top: 20px ;
+  margin: 0%;
+  padding: 0%;
+  }
+
+  .top-banner-img img{
+    width: 477px;
+    height: 577px;
+  }
+  
+  .top-banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+   footer{
+    display:none ;
+  }
+
+
+  /* 2nd part start*/
+
+  .blog-banner-container{
+    border: 6px solid purple;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-button-container{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 60%;
+  }
+
+  .blog-button-container button{
+    width: 100%;
+  }
+
+  .blog-grid-view{
+    margin: 0px;
+    padding: 0px;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+  }
+
+ .blogs{
+   border: 3px solid greenyellow;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-items: center;
+   align-items: center;
+   
+ }
+
+/* 2nd part end */
 
    
  }
 
+ }
