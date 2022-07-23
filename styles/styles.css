@@ -21,7 +21,7 @@ main {
 .top-banner-container{
     width: 1300px;
   height: 646px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   
   margin: 10px;
 }
@@ -69,6 +69,7 @@ main {
 .top-banner-title button{
     font-family:"Poppins";
     background-color: red;
+    border-color: red;
     border-radius: 10px;
     color: #ffffff;
     padding: 2% 4%;
@@ -76,23 +77,37 @@ main {
     font-size:medium;
 }
 
+
 .top-banner-img img {
   margin: 0%;
   position: relative;
-  left: 25%;
+  left: 32%;
   top: 18px;
   width: 581px;
   height: 613px;
 }
+
+.player-img{
+  transition: transform 0.5s ease-out;
+}
+
+
+.top-banner-img-container:hover .player-img{
+  transform:translateX(-100px) ;
+} 
+
+
+
 
 
 /* -------------
 2nd part grid section
 -------------------*/
 
- /* Match side button  */
+ /* Blog side button  */
 
-.match-banner-container{
+ 
+.blog-banner-container{
     /* border: 2px solid purple; */
     width: 1300px;
     height: 660px;
@@ -100,7 +115,7 @@ main {
     display: flex;
 }   
 
- .match-button-container {
+ .blog-button-container {
     background-color: #161616;
     border-radius: 10px;
     width: 212px;
@@ -113,7 +128,7 @@ main {
 }
 
 
-.match-button-container button{
+ .buttons{
   font-family:"Poppins";
   width: 152px;
   height: 44px;
@@ -124,32 +139,43 @@ main {
   border-color: #ffffff;
 }
 
+ .blog-buttons{
+  background-color: red;
+  color: #ffffff;
+  font-family:"Poppins";
+  width: 152px;
+  height: 44px;
+  font-weight: 700;
+  border-radius: 5px;
+}
 
-/* Match Grid View */
-.match-grid-view{
+
+
+/* -------------------
+      Blog Grid View
+----------------------------------- */
+
+.blog-grid-view{
   /* border: 2px solid red; */
   width: 1088px;
   padding-left: 20px;
 }
 
-.matches {
+.blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
   padding-left: 5px;
   gap: 10px;
 }
 
-
-
-.single-match{
+.single-blog{
   background-color:rgb(246, 242, 236);
   border-radius: 10px;
   /* border: 2px solid green; */
   width: 320px;
 
 }
- .single-match img{
+ .single-blog img{
   width: 320px;
   height: 175px;
 }
@@ -157,21 +183,15 @@ main {
    padding-left: 10px;
 
  }
-.match-info h3{
+.blog-info h3{
   padding-left: 10px;
   margin: 0;
-
 }
 
-.match-schedule-container {
+.blog-schedule-container {
   display: flex;
   justify-content: space-around;
-  
-  
-  
 }
-
-
 
  .clock, .comments{
   display: flex;
@@ -184,8 +204,94 @@ main {
   align-items: center;
 }
 
-.match-rating-info{
+.blog-rating-info{
   display: flex;
   justify-content:space-between
 
 }
+
+
+/* Footer Section Styles  */
+
+footer{
+  width: 100%;
+  height: 444px;
+  background-color: #161616;
+  
+}
+.goal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.goal h2, .about-container{
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container{
+  display: flex;
+  margin-top: 100px;
+}
+
+.about-info{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 20px;
+}
+
+
+
+
+/*-------------------
+ Web side 02 Match Flag  
+ --------------------------*/
+.upcoming-match-button{
+  background-color: red;
+  color: #ffffff;
+  font-family:"Poppins";
+  width: 152px;
+  height: 44px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+
+.match-container{
+  /* border: 2px solid blue; */
+  width: 1088px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 5px;
+  gap: 10px;
+
+}
+
+
+.matches{
+  /* display: block; */
+  /* border: 2px solid greenyellow; */
+  width: 312px;
+  height: 242px;
+  background-color:rgb(246, 242, 236);
+  border-radius: 10px;
+
+}
+
+ .match-flag-container{
+   display: flex;
+   justify-content: space-around;
+   
+   padding-top: 20px;
+
+ }
+
+ .match-info h2, h3{
+  display: flex;
+  justify-content: space-around;
+  
+ }
