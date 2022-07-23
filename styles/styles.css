@@ -29,6 +29,7 @@ main {
 /* Top-Banner Style  */
 
 .top-banner {
+  border: 5px solid greenyellow;
   width: 1300px;
   height: 646px;
   background-color: #161616;
@@ -40,21 +41,21 @@ main {
   /* padding-left: 100px; */
 }
 
-.top-banner-title {
+.top-banner-title-container {
   position: relative;
   left: 10%;
   width: 531px;
   height: 424px;
   /* border: 2px solid brown; */
 }
-.top-banner-title h1 {
+.top-banner-title {
   margin: 0;
   font-weight: 700;
   font-size: 58px;
   color: #ffffff;
 }
 
-.top-banner .top-banner-title p {
+.top-banner-paragraph{
     
   font-family: "Poppins";
   font-style:normal
@@ -295,3 +296,105 @@ footer{
   justify-content: space-around;
   
  }
+
+
+
+        /* --------------
+        Media Queries
+        ................ */
+
+ /* Mobile Device */
+
+ @media only screen and (max-width:688px) {
+
+  .main, .top-banner-container, .top-banner, .top-banner-title-container{
+    width: 100%;
+  }
+  .top-banner{
+    border: 6px solid red;
+  }
+
+  .top-banner-title {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .top-banner-paragraph{
+    width: 100%;
+    
+    font-size: 12px;
+    
+  }
+
+.top-banner-img, .player-img {
+  position: relative;
+  left: -30px;
+  top:-180px ;
+
+  margin: 0%;
+  padding: 0%;
+  }
+
+  .top-banner-img img{
+    width: 277px;
+    height: 377px;
+  }
+  
+  .top-banner{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+
+   footer{
+    display:none ;
+  }
+
+
+  /* 2nd part */
+
+  .blog-banner-container{
+    border: 6px solid purple;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-button-container{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 60%;
+  }
+
+  .blog-button-container button{
+    width: 100%;
+  }
+
+  .blog-grid-view{
+    margin: 0px;
+    padding: 0px;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+  }
+
+ .blogs{
+   border: 3px solid greenyellow;
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   justify-items: center;
+   align-items: center;
+   
+ }
+
+/* 2nd part end */
+
+
+blog-button-container
+
+   
+ }
+
