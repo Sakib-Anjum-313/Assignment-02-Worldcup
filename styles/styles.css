@@ -407,6 +407,22 @@ footer{
 
 }
 
+
+
+/* upcoming match style start  */
+
+.match-container{
+  width: 100%;
+ /* border: 3px solid greenyellow; */
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ justify-items: center;
+ align-items: center;
+ margin: 0px;
+ padding: 0px;
+ 
+}
+
 /* ------------
 Mobile View End
 -------------  */
@@ -447,7 +463,6 @@ Tablet View Start
   position: relative;
   left: -80px;
   top:0px ;
-
   margin: 0%;
   padding: 0%;
   }
