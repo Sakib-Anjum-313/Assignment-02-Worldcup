@@ -245,6 +245,26 @@ footer{
   padding: 5px 20px;
 }
 
+.link-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.link-container a{
+  font-size: 40px;
+  padding: 0 15px;
+}
+
+.fa-facebook-square{
+  color: #1977F2;
+}
+
+.fa-linkedin{
+  color: #0A66C2;
+}
+
 
 
 
@@ -399,11 +419,13 @@ footer{
 }
 
 .about-container{
-  
+
   height: 100%;
   display: flex;
   flex-direction: column;
 }
+
+
 
 /* upcoming match style start  */
 
