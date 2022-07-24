@@ -405,10 +405,6 @@ footer{
   flex-direction: column;
 }
 
-}
-
-
-
 /* upcoming match style start  */
 
 .match-container{
@@ -422,6 +418,12 @@ footer{
  padding: 0px;
  
 }
+
+}
+
+
+
+
 
 /* ------------
 Mobile View End
