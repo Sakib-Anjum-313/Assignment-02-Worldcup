@@ -299,22 +299,22 @@ footer{
 
 
 
-        /* --------------
-        Media Queries
-        ................ */
+    /* --------------
+    Media Queries 
+    ................ */
 
 
-        /* ----------
-        Mobile Device 
-        ---------------*/
+    /* ----------
+    Mobile Device  Start
+    ---------------*/
 
  @media only screen and (max-width:688px) {
 
-  .main, .top-banner-container, .top-banner, .top-banner-title-container{
+  .main, .top-banner-container, .top-banner, .top-banner-title-container {
     width: 100%;
   }
   .top-banner{
-    border: 6px solid red;
+    /* border: 6px solid red; */
   }
 
   .top-banner-title {
@@ -349,15 +349,10 @@ footer{
     
   }
 
-   footer{
-    display:none ;
-  }
-
-
   /* 2nd part start*/
 
   .blog-banner-container{
-    border: 6px solid purple;
+    /* border: 6px solid purple; */
     height: 100%;
     width: 100%;
     display: flex;
@@ -370,6 +365,7 @@ footer{
     flex-direction: row;
     background-color: white;
     height: 60%;
+    margin-bottom: 40px;
   }
 
   .blog-button-container button{
@@ -385,7 +381,7 @@ footer{
   }
 
  .blogs{
-   border: 3px solid greenyellow;
+   /* border: 3px solid greenyellow; */
    display: grid;
    grid-template-columns: repeat(1, 1fr);
    justify-items: center;
@@ -395,42 +391,70 @@ footer{
 
 /* 2nd part end */
 
-   
- }
+/* Footer Part  */
+
+.footer-container{
+  width: 100%;
+  height: 100%;
+}
+
+.about-container{
+  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
 /* ------------
-Tablet View
+Mobile View End
 -------------  */
 
- @media only screen and (max-width:992px) {
-  .main, .top-banner-container, .top-banner, .top-banner-title-container{
+
+
+
+/* ------------
+Tablet View Start
+-------------  */
+
+
+ @media only screen and (min-width:688px) and (max-width:992px) {
+
+
+
+  .main, .top-banner-container, .top-banner, .top-banner-title-container {
     width: 100%;
   }
   .top-banner{
-    border: 6px solid red;
+    /* border: 6px solid red; */
+    width: 100%;
   }
 
   .top-banner-title {
     width: 100%;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .top-banner-paragraph{
     width: 100%;
+    
     font-size: 12px;
     
   }
 
 .top-banner-img, .player-img {
   position: relative;
-  left: -150px;
-  top: 20px ;
+  left: -80px;
+  top:0px ;
+
   margin: 0%;
   padding: 0%;
   }
 
   .top-banner-img img{
-    width: 477px;
-    height: 577px;
+    width: 377px;
+    height: 477px;
   }
   
   .top-banner{
@@ -439,15 +463,10 @@ Tablet View
     
   }
 
-   footer{
-    display:none ;
-  }
-
-
   /* 2nd part start*/
 
   .blog-banner-container{
-    border: 6px solid purple;
+    /* border: 6px solid purple; */
     height: 100%;
     width: 100%;
     display: flex;
@@ -455,16 +474,23 @@ Tablet View
     align-items: center;
   }
 
+  /* side button style start  */
+
   .blog-button-container{
     display: flex;
     flex-direction: row;
     background-color: white;
     height: 60%;
+    margin-bottom: 40px;
   }
 
   .blog-button-container button{
     width: 100%;
   }
+
+
+  /* match grid view start  */
+
 
   .blog-grid-view{
     margin: 0px;
@@ -475,7 +501,7 @@ Tablet View
   }
 
  .blogs{
-   border: 3px solid greenyellow;
+   /* border: 3px solid greenyellow; */
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    justify-items: center;
@@ -485,7 +511,58 @@ Tablet View
 
 /* 2nd part end */
 
-   
- }
 
- }
+/* Footer Part  */
+
+.footer-container{
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------
+Tablet View End
+-------------  */
+
+
+/* ------------
+Upcoming Match News style
+-------------  */
+
+.match-container{
+  width: 100%;
+ /* border: 3px solid greenyellow; */
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ justify-items: center;
+ align-items: center;
+ margin: 0px;
+ padding: 0px;
+ 
+}
+
+
+
+
+/* 2nd part end */
+
+
+/* Footer Part  */
+
+.footer-container{
+width: 100%;
+height: 100%;
+}
+
+.about-container{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+
+
+
+
+   
+}
+
